@@ -100,5 +100,4 @@ function displayContent(arr) {
       </svg>
   `;
 }
-
 displayContent(data);
