@@ -1,0 +1,24 @@
+@import 'base/fonts.css';
+@import 'base/typography.css';
+@import 'base/reset.css';
+
+@import 'abstracts/variables.css';
+@import 'abstracts/animations.css';
+
+@import 'layout/flex.css';
+
+@import 'components/button.css';
+@import 'components/container.css';
+@import 'components/arrow-btn.css';
+@import 'components/desktop-form.css';
+@import 'components/mobile-form.css';
+@import 'components/title.css';
+
+@import 'sections/header.css';
+@import 'sections/top-section.css';
+@import 'sections/advantages.css';
+@import 'sections/homes.css';
+@import 'sections/destinatin.css';
+@import 'sections/sign-up.css';
+@import 'sections/reviews.css';
+@import 'sections/footer.css';

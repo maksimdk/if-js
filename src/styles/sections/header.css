@@ -1,0 +1,170 @@
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: #000c40;
+  background-size: cover;
+  padding: 50px 0 3px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo svg {
+  width: 205px;
+  height: 40px;
+  color: var(--accent-blue-color);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav__nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links__item {
+  position: relative;
+  display: flex;
+}
+
+.nav-links__item:hover:after {
+  content: ' ';
+  position: absolute;
+  border: 2px solid var(--accent-yellow-color);
+  width: 85%;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: underline-link 250ms;
+}
+
+.nav-links__link {
+  font-style: normal;
+  text-align: center;
+  color: var(--general-white-color);
+}
+
+.nav-links__link:hover {
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav__nav-button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-button__button {
+  border: none;
+  background-color: transparent;
+}
+
+.button__svg:hover {
+  color: var(--accent-yellow-color);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.button__svg--theme {
+  color: var(--general-white-color);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.button__svg--account {
+  color: var(--general-white-color);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-button__item--burger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  /*For mobile tablets:*/
+
+  .header {
+    padding: 20px 0 3px;
+  }
+
+  .header__logo svg {
+    width: 170px;
+    height: 33px;
+  }
+
+  .nav__nav-links {
+    display: none;
+  }
+
+  .button__svg:hover {
+    color: var(--general-white-color);
+    cursor: pointer;
+    transform: none;
+  }
+
+  .button__svg--theme {
+    width: 25px;
+    height: 25px;
+  }
+
+  .button__svg--account {
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-button__item--burger {
+    display: block;
+  }
+
+  .button__svg--burger {
+    color: var(--general-white-color);
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*For mobile phones:*/
+
+  .header {
+    padding: 12px 0 3px;
+  }
+
+  .header__logo svg {
+    width: 122px;
+    height: 24px;
+  }
+
+  .nav__nav-button {
+    gap: 16px;
+  }
+
+  .button__svg--theme {
+    width: 16px;
+    height: 16px;
+  }
+
+  .button__svg--account {
+    width: 24px;
+    height: 24px;
+  }
+
+  .button__svg--burger {
+    width: 24px;
+    height: 16px;
+  }
+}

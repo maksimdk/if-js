@@ -1,0 +1,23 @@
+.title {
+  color: var(--text-main-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  /*For tablets:*/
+  .title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*For mobile phones:*/
+  .title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}

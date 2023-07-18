@@ -1,0 +1,57 @@
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-block {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--stroke-color);
+  padding: 11px;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 7px;
+  height: 18px;
+}
+
+@media (max-width: 1024px) {
+  /*For mobile tablets:*/
+  .arrow-block {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+  }
+
+  .arrow-block {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*For mobile phones:*/
+
+  .arrow-block {
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+  }
+
+  .arrow {
+    margin: 0 auto;
+    width: 5px;
+    height: 14px;
+  }
+}
