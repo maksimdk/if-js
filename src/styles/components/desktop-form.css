@@ -30,6 +30,7 @@
 }
 
 .filter-block {
+  display: none;
   font-size: 16px;
   line-height: 18px;
   position: absolute;
@@ -54,40 +55,40 @@
   justify-content: space-between;
 }
 
-.filter__name{
+.filter__name {
 }
 
-.filter__counter{
+.filter__counter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.counter__value{
+.counter__value {
   margin: 0 20px;
 }
 
-.counter__btn{
+.counter__btn {
   color: var(--secondary-text-color);
   width: 30px;
   height: 30px;
   border: 1px solid var(--secondary-text-color);
 }
 
-.counter__btn--active{
+.counter__btn--active {
   color: var(--accent-blue-color);
   width: 30px;
   height: 30px;
   border: 1px solid var(--accent-blue-color);
 }
 
-.filter__select{
+.filter__select {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.select__test{
+.select__test {
   width: 100px;
   height: 30px;
   border: 1px solid var(--accent-blue-color);
