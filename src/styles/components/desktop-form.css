@@ -83,12 +83,17 @@
 
 .filter__select {
   display: none;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
-.select__test {
-  width: 100px;
+.filter__select:first-child {
+  width: 100%;
+}
+
+.select__options {
+  width: 47%;
   height: 30px;
   border: 1px solid var(--accent-blue-color);
 }
