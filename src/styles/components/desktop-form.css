@@ -29,6 +29,75 @@
   /*max-width: 314px;*/
 }
 
+.filter-block {
+  z-index: 1000;
+  display: none;
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  top: 73px;
+  right: 0px;
+  width: 259px;
+  border-radius: 8px;
+  background-color: var(--general-white-color);
+}
+
+.filter__elements {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.filter__elem {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__name {
+}
+
+.filter__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter__value {
+  margin: 0 20px;
+}
+
+.counter__btn {
+  color: var(--secondary-text-color);
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--secondary-text-color);
+}
+
+.counter__btn--active {
+  color: var(--accent-blue-color);
+  border: 1px solid var(--accent-blue-color);
+}
+
+.filter__select {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter__select:first-child {
+  width: 100%;
+}
+
+.select__options {
+  width: 47%;
+  height: 30px;
+  border: 1px solid var(--accent-blue-color);
+}
+
 .label {
   color: var(--general-white-color);
   position: absolute;

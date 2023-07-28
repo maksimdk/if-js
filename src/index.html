@@ -103,6 +103,75 @@
                 name="name"
                 value="2 Adults − 0 Children − 1 Room"
               />
+              <div class="filter-block">
+                <ul class="filter__elements">
+                  <li class="filter__elem">
+                    <div class="filter__name">Adults</div>
+                    <div class="filter__counter">
+                      <button
+                        type="button"
+                        data-count="adults-minus"
+                        class="btn counter__btn counter__btn--minus"
+                      >
+                        –
+                      </button>
+                      <p data-name="adults" class="counter__value">0</p>
+                      <button
+                        type="button"
+                        data-count="adults-plus"
+                        class="btn counter__btn counter__btn--plus counter__btn--active"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filter__elem">
+                    <div class="filter__name">Children</div>
+                    <div class="filter__counter">
+                      <button
+                        type="button"
+                        data-count="children-minus"
+                        class="btn counter__btn counter__btn--minus"
+                      >
+                        –
+                      </button>
+                      <p data-name="children" class="counter__value">0</p>
+                      <button
+                        type="button"
+                        data-count="children-plus"
+                        class="btn counter__btn counter__btn--plus counter__btn--active"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filter__elem">
+                    <div class="filter__name">Rooms</div>
+                    <div class="filter__counter">
+                      <button
+                        type="button"
+                        data-count="rooms-minus"
+                        class="btn counter__btn counter__btn--minus"
+                      >
+                        –
+                      </button>
+                      <p data-name="rooms" class="counter__value">0</p>
+                      <button
+                        type="button"
+                        data-count="rooms-plus"
+                        class="btn counter__btn counter__btn--plus counter__btn--active"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filter__elem filter__select">
+                    <div class="select__lable">
+                      What is the age of the child you’re travelling with?
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <button class="form__button">Search</button>
           </form>
@@ -230,51 +299,7 @@
         <div class="container">
           <h2 class="title homes__title">Homes guests loves</h2>
           <ul class="row homes__cards">
-            <!--            <li class="col-lg-3 col-md-6 col-sm-3 homes__card">-->
-            <!--              <img-->
-            <!--                class="homes__img"-->
-            <!--                src="../src/images/jpg/homes/hotel-leopold.jpg"-->
-            <!--                alt="Hotel Leopold"-->
-            <!--              />-->
-            <!--              <a class="link homes__link" href="#">Hotel Leopold</a>-->
-            <!--              <p class="homes__text">Saint Petersburg, Russia</p>-->
-            <!--            </li>-->
-            <!--            <li class="col-lg-3 col-md-6 col-sm-3 homes__card">-->
-            <!--              <img-->
-            <!--                class="homes__img"-->
-            <!--                src="../src/images/jpg/homes/apartment-sunshine.jpg"-->
-            <!--                alt="Apartment Sunshine"-->
-            <!--              />-->
-            <!--              <a class="link homes__link" href="#">Apartment Sunshine</a>-->
-            <!--              <p class="homes__text">Santa Cruz de Tenerife, Spain</p>-->
-            <!--            </li>-->
-            <!--            <li class="col-lg-3 col-md-6 col-sm-3 homes__card _displ-none">-->
-            <!--              <img-->
-            <!--                class="homes__img"-->
-            <!--                src="../src/images/jpg/homes/villa-kunerad.jpg"-->
-            <!--                alt="Villa Kunerad"-->
-            <!--              />-->
-            <!--              <a class="link homes__link" href="#">Villa Kunerad</a>-->
-            <!--              <p class="homes__text">Vysokie Tatry, Slowakia</p>-->
-            <!--            </li>-->
-            <!--            <li class="col-lg-3 col-md-6 col-sm-3 homes__card _displ-none">-->
-            <!--              <img-->
-            <!--                class="homes__img"-->
-            <!--                src="../src/images/jpg/homes/hostel-friendship.jpg"-->
-            <!--                alt="Hostel Friendship"-->
-            <!--              />-->
-            <!--              <a class="link homes__link" href="#">Hostel Friendship</a>-->
-            <!--              <p class="homes__text">Berlin, Germany</p>-->
-            <!--            </li>-->
-            <!--            <button-->
-            <!--              class="btn arrow-block homes__arrow-block"-->
-            <!--              type="button"-->
-            <!--              aria-label="Next apartments"-->
-            <!--            >-->
-            <!--              <svg class="arrow">-->
-            <!--                <use href="../src/images/favicons/sprite.svg#arrow" />-->
-            <!--              </svg>-->
-            <!--            </button>-->
+            <!--      JS DOM      -->
           </ul>
         </div>
       </section>
