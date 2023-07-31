@@ -1,3 +1,13 @@
+fetch('https://if-student-api.onrender.com/api/hotels/popular')
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`${response.status} - ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((json) => displayContent(json))
+  .catch((err) => console.log(err.message));
+
 export function createCard(imageUrl, name, city, country) {
   return `
   <img
@@ -12,17 +22,17 @@ export function createCard(imageUrl, name, city, country) {
 
 export function displayContent(arr) {
   const element = document.querySelector('.homes__cards');
-  arr.forEach((item) => {
+  for (let item = 0; item < 4; item++) {
     const newEl = document.createElement('li');
     newEl.classList.add('col-lg-3', 'col-md-6', 'col-sm-3', 'homes__card');
     element.append(newEl);
     newEl.innerHTML = createCard(
-      item.imageUrl,
-      item.name,
-      item.city,
-      item.country,
+      arr[item].imageUrl,
+      arr[item].name,
+      arr[item].city,
+      arr[item].country,
     );
-  });
+  }
 
   const newBtn = document.createElement('button');
   newBtn.classList.add('btn', 'arrow-block', 'homes__arrow-block');
@@ -33,8 +43,3 @@ export function displayContent(arr) {
       </svg>
   `;
 }
-
-fetch('https://if-student-api.onrender.com/api/hotels/popular')
-  .then((response) => response.json())
-  .then((json) => displayContent(json))
-  .catch((err) => console.log(err));
