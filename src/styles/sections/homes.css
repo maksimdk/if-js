@@ -11,6 +11,7 @@
 .homes__cards {
   position: relative;
   align-items: flex-start;
+  row-gap: 20px;
 }
 
 .homes__arrow-block {
