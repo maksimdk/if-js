@@ -1,0 +1,118 @@
+.block {
+  display: none;
+}
+
+.available {
+  background-color: var(--bg-main-color);
+  padding-top: var(--block-space);
+  padding-bottom: var(--block-space);
+}
+
+.available__title {
+  margin-bottom: 105px;
+}
+
+.available__cards {
+  position: relative;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.available__arrow-block {
+  top: 30%;
+  right: -1%;
+  transform: translate(0, 0);
+  box-shadow: 0 4px 4px 0 var(--dark-mode-3-color);
+}
+
+.available__arrow-block:hover {
+  transform: scale(1.2);
+  transition: 300ms;
+}
+
+.available__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.available__img {
+  /*max-width: 296px;*/
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 24px;
+}
+
+.available__link {
+  color: var(--accent-blue-color);
+  margin-bottom: 24px;
+}
+
+.available__text {
+  color: var(--secondary-text-color);
+}
+@media (max-width: 1024px) {
+  /*For mobile tablets:*/
+
+  .available {
+    background-color: var(--bg-main-color);
+    padding-top: var(--block-space);
+    padding-bottom: var(--block-space);
+  }
+
+  .available__title {
+    margin-bottom: 60px;
+  }
+
+  ._displ-none {
+    display: none;
+  }
+
+  .available__arrow-block {
+    top: 30%;
+    right: -1%;
+    transform: translate(0, 0);
+    box-shadow: 0 4px 4px 0 var(--dark-mode-3-color);
+  }
+
+  .available__card {
+    justify-content: center;
+  }
+
+  .available__img {
+    margin-bottom: 12px;
+  }
+
+  .available__link {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*For mobile phones:*/
+
+  .available {
+    background-color: var(--bg-main-color);
+    padding-top: var(--block-space);
+    padding-bottom: var(--block-space);
+  }
+
+  .available__title {
+    margin-bottom: 32px;
+  }
+
+  .available__arrow-block {
+    top: 30%;
+    right: -1%;
+    transform: translate(0, 0);
+    box-shadow: 0 4px 4px 0 var(--dark-mode-3-color);
+  }
+
+  .available__img {
+    margin-bottom: 8px;
+  }
+
+  .available__link {
+    margin-bottom: 4px;
+  }
+}

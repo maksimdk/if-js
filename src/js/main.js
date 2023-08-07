@@ -1,8 +1,7 @@
-//import { data } from './homesSection.js';
 import { displayContent } from './homesSection.js';
 
-import { showFilter } from './filterHotel.js';
+import { showFilter } from './form/filterHotel.js';
+import { searchBtn, searchHotels } from './form/searchHotel.js';
 
 document.addEventListener('click', showFilter);
-
-//displayContent(data);
+searchBtn.addEventListener('click', searchHotels);
