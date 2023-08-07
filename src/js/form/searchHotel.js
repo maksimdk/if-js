@@ -5,6 +5,12 @@ export const searchHotels = (event) => {
     '.input--destination',
   ).value;
 
+  const lengthCards = document.querySelector('.available__cards');
+
+  if (!(lengthCards.children.length === 0)) {
+    lengthCards.innerHTML = '';
+  }
+
   fetch(
     `https://if-student-api.onrender.com/api/hotels?search=${inputDestinationValue}`,
   )
