@@ -29,15 +29,8 @@ export const searchHotels = (event) => {
       document.querySelector('.available').classList.remove('block');
       const element = document.querySelector('.available__cards');
       json.forEach((item) => {
-        const newEl = document.createElement('li');
-        newEl.classList.add(
-          'col-lg-3',
-          'col-md-6',
-          'col-sm-3',
-          'available__card',
-        );
-        element.append(newEl);
-        newEl.innerHTML = `
+        element.innerHTML += `
+            <li class="col-lg-3 col-md-6 col-sm-3 homes__card">
               <img
                 class="available__img"
                 src="${item.imageUrl}"
@@ -45,6 +38,7 @@ export const searchHotels = (event) => {
               />
               <a class="link available__link" href="#">${item.name}</a>
               <p class="available__text">${item.city}, ${item.country}</p>
+            </li>
         `;
       });
     })
