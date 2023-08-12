@@ -1,5 +1,3 @@
-
-
 import { showFilter } from './form/filterHotel.js';
 import { searchBtn, searchHotels } from './form/searchHotel.js';
 
