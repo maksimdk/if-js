@@ -11,16 +11,20 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
     <form id="form" class="form">
       <label>
-        <input type="text" name="name" value="Maks" />
+        <input class="input" type="file" name="file" multiple />
       </label>
-      <label>
-        <input type="text" name="surname" value="Kot" />
-      </label>
-      <label>
-        <input type="file" name="file" multiple />
+
+      <button type="submit">Send</button>
+    </form>
+
+    <form id="form2" class="form">
+      <label class="label">
+        <input class="input-file" id="file" type="file" name="file" hidden />
+        <div id="image-div" class="image-div">
+          <span class="span">Click to add your image</span>
+        </div>
       </label>
       <button type="submit">Send</button>
     </form>
