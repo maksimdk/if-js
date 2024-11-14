@@ -13,19 +13,20 @@ async function displayContent() {
   }
 
   const element = document.querySelector('.homes__cards');
-  hotels.forEach((item) => {
+
+  for (let item = 0; item < 4; item++) {
     element.innerHTML += `
             <li class="col-lg-3 col-md-6 col-sm-3 homes__card">
               <img
                 class="homes__img"
-                src="${item.imageUrl}"
+                src="${hotels[item].imageUrl}"
                 alt="image didn't load"
               />
-              <a class="link homes__link" href="#">${item.name}</a>
-              <p class="homes__text">${item.city}, ${item.country}</p>
+              <a class="link homes__link" href="#">${hotels[item].name}</a>
+              <p class="homes__text">${hotels[item].city}, ${hotels[item].country}</p>
             </li>
         `;
-  });
+  }
 
   const newBtn = document.createElement('button');
   newBtn.classList.add('btn', 'arrow-block', 'homes__arrow-block');
