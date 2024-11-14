@@ -33,7 +33,7 @@ async function displayContent() {
   element.append(newBtn);
   newBtn.innerHTML = `
       <svg class="arrow">
-        <use href="../src/images/favicons/sprite.svg#arrow" />
+        <use href="src/images/favicons/sprite.svg#arrow" />
       </svg>
   `;
 }
